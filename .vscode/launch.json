@@ -5,12 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Debugger: Current File with Arguments",
+            "name": "Current File",
             "type": "debugpy",
             "request": "launch",
-            "program": "/home/<file_path>/::",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": ":: with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "<path_to_quad_ops>/::",
             "console": "integratedTerminal",
-            "args":" test run_file simple_file.txt"
+            "args": " test run_file simple_file.txt"
+        },
+        {
+            "name": "Throw Error: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "<path_to_quad_ops>/::",
+            "console": "integratedTerminal",
+            "args": " test run_file simple_file.txts"
         }
     ]
 }

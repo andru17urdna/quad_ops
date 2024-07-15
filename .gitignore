@@ -12,3 +12,4 @@ env/
 # Ignore other typical files/folders
 .DS_Store
 .idea/
+.vscode/
