@@ -47,7 +47,8 @@ def fetch_files( *files, **kwargs):
     return_kwargs = {}
 
     def decorator(func):
-        file_path = f"<add file path here>/{func.__module__}" 
+        corrected_file_path = sys.argv[0].replace("::","")
+        file_path = f"{corrected_file_path}files/{func.__module__}/" 
         files_klass = Files(file_path)
 
         for file_name in files:

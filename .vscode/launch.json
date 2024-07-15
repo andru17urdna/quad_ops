@@ -8,9 +8,9 @@
             "name": "Python Debugger: Current File with Arguments",
             "type": "debugpy",
             "request": "launch",
-            "program": "::",
+            "program": "/home/<file_path>/::",
             "console": "integratedTerminal",
-            "args":"test run_file simple_file.txt -v"
+            "args":" test run_file simple_file.txt"
         }
     ]
 }

@@ -3,7 +3,6 @@ import subprocess
 from utils.classes import BaseClass, Parser, Arg
 from utils.wrappers import fetch_files
 
-
 def score_file_name(file_name):
     return file_name.replace(".", "_")
 
